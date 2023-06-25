@@ -1,3 +1,4 @@
+#include "hzpch.h"
 #include "Application.h"
 
 #include "Hazel/Events/ApplicationEvent.h"
@@ -14,10 +15,10 @@ namespace Hazel {
 		WindowResizeEvent e{ 1200, 720 };
 
 		if (e.IsInCategory(EventCategoryApplication)){
-			HZ_TRACE(e.ToString());
+			HZ_TRACE(e);
 		}
 		if (e.IsInCategory(EventCategoryInput)) {
-			HZ_TRACE(e.ToString());
+			HZ_TRACE(e);
 		}
 		while (true);
 	}
